@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Course Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .enroll-btn {
+            background-color: #6d28d9;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .enroll-btn:hover {
+            background-color: #4c1d95;
+        }
+        /* Style for the photo section */
+        .photo-section {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .photo-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-section img:hover {
+            transform: scale(1.05);
+        }
+        /* Remove list icons */
+        .list-disc li {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto py-8">
+        <h1 class="text-4xl font-bold mb-6 text-center">Pottery Course Details</h1>
+
+        <div class="mb-8 text-center">
+            <h2 class="text-2xl font-semibold mb-4">Hand Building Techniques for Pottery</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li>The ongoing course is tailored for those passionate about pottery.</li>
+                <li>Participants delve into hand building techniques with clay.</li>
+                <li>Emphasis on creativity with basic hand tools and clay.</li>
+                <li>Well-suited for students, sculptors, homemakers, and enthusiasts.</li>
+            </ul>
+        </div>
+
+        <div class="mb-8 text-center">
+            <h2 class="text-2xl font-semibold mb-4">Pottery and Ceramic Introduction Course</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li>A comprehensive exploration of pottery wheel and hand-building techniques.</li>
+                <li>Includes six sessions dedicated to hand building and six on wheel throwing.</li>
+                <li>Participants complete a minimum of five pieces during the 12-session course.</li>
+                <li>Priced at ₹8000, catering to all skill levels and interests.</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl font-semibold mb-4">Advanced Pottery Courses</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Participants progress after completing the introductory course.</li>
+                <li>Offering in-depth exploration of various techniques.</li>
+                <li>Flexible duration tailored to participant knowledge and interest.</li>
+                <li>Structured learning for an immersive experience in pottery.</li>
+            </ul>
+        </div>
+
+        <div class="photo-section">
+            <img src="1.png" alt="Pottery Session" class="rounded-lg shadow-lg">
+            <img src="Screenshot 2024-01-08 182800.png" alt="Pottery Session" class="rounded-lg shadow-lg">
+            <img src="Screenshot 2024-01-08 185623.png" alt="Pottery Session" class="rounded-lg shadow-lg">
+            <img src="Screenshot 2024-01-08 185710.png" alt="Pottery Session" class="rounded-lg shadow-lg">
+            <img src="Screenshot 2024-01-08 185807.png" alt="Pottery Session" class="rounded-lg shadow-lg">
+        </div>
+
+        <!-- Enrollment section -->
+        <div class="text-center my-12">
+            <a href="/master" class="enroll-btn inline-block">Enroll Now</a>
+            <h2 class="text-3xl font-bold mb-6 mt-8">Enroll in Pottery Course</h2>
+            <p class="mb-4">Choose the course you're interested in and start your pottery journey!</p>
+            <!-- Add enrollment form or additional details here -->
+        </div>
+    </div>
+</body>
+</html>
