@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mudberry Studio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Final Logo.jpg" rel="icon">
+
+  <!-- Favicons -->
+  <link href="Final Logo.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.goo gleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bg-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="text-white text-xl font-bold">Mudberry Studio</a>
+      </div>
+      <!-- Navigation Links -->
+      <div class="hidden sm:block">
+        <div class="flex space-x-8">
+          <a href="/" class="text-white hover:text-green-500">Home</a>
+          <a href="/login" class="text-white hover:text-green-500">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="sm:hidden">
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    <a href="/" class="block text-white hover:text-green-500">Home</a>
+    <a href="/login" class="block text-white hover:text-green-500">Login</a>
+  </div>
+</div>
+
+<!-- Registration Section -->
+<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex justify-center"> <!-- Centering the content -->
+  <div class="bg-black overflow-hidden shadow-xl sm:rounded-lg w-full sm:max-w-2xl"> <!-- Increased width to sm:max-w-2xl -->
+    <div class="p-6 sm:px-20 bg-black border-b border-gray-200 grid grid-cols-6 gap-6"> <!-- Background color changed to black -->
+      <div class="col-span-6"> <!-- Full width for content -->
+        <div class="text-2xl text-white text-center mb-4">Register Now!</div> <!-- Text centered -->
+        <form class="space-y-6" action="/register" method="POST">
+          <div class="grid grid-cols-6 gap-6">
+            <div class="col-span-6 sm:col-span-3">
+              <label for="first_name" class="block text-sm font-medium text-white">First Name</label>
+              <input id="first_name" name="fname" type="text" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="last_name" class="block text-sm font-medium text-white">Last Name</label>
+              <input id="last_name" name="lname" type="text" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="email" class="block text-sm font-medium text-white">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+            <label for="gender" class="block text-sm font-medium text-white">Gender</label>
+              <select id="gender" name="gender" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="phone" class="block text-sm font-medium text-white">Phone Number</label>
+              <input id="phone" name="phone" type="tel" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="age" class="block text-sm font-medium text-white">Age</label>
+              <input id="age" name="age" type="number" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="password" class="block text-sm font-medium text-white">Password</label>
+              <input id="password" name="password" type="password" autocomplete="new-password" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label for="confirm_password" class="block text-sm font-medium text-white">Confirm Password</label>
+              <input id="confirm_password" name="confirmPassword" type="password" autocomplete="new-password" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm">
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="mt-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md w-full">Register</button> <!-- Button width set to full -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+!-- <br><br><br><br>
+{{>footer}}
+</body>
+</html>
