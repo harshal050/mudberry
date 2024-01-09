@@ -1,0 +1,27 @@
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.section-gallery .grid {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 480px) {
+	.section-plans .grid {
+    margin: 0 -12px;
+  }
+
+  .section-plans .grid > * {
+    padding: 0 12px;
+  }
+}

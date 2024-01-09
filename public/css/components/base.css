@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  color: #8d8f92;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {  
+  margin: 0;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1, * + h2, * + h3,* + h4,* + h5,* + h6 {
+  margin: 0.67em 0 0 0;
+}
+
+p, ul, ol, figure {
+  margin: 0 0 15px 0;
+}
+
+div > p {
+  margin-bottom: 0;
+}
+
+* + p, * + ul, * + ol, * + figure{
+  margin-top: 15px;
+}
+
+ul {
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+
+ul > li > ol,
+ul > li > ul,
+ol > li > ul,
+ol > li > ol {
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+    padding: 0 30px;
+  }
+
+  .section-techniques .container {
+    padding: 0 40px;
+  }
+
+  .section-story .container {
+    padding: 0 40px;
+  }
+
+  .section-contacts .container {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+	.container {
+    padding: 0 80px;
+  }
+
+  .header .container {
+    padding: 0 30px;
+  }
+
+  .section-techniques .container {
+    padding: 0 100px;
+  }
+
+  .section-story .container {
+    padding: 0 40px;
+  }
+
+  .section-contacts .container {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+	.container {
+    padding: 0 160px;
+  }
+
+  .header .container {
+    padding: 0 30px;
+  }
+
+  .section-techniques .container {
+    padding: 0 200px;
+  }
+
+  .section-story .container {
+    padding: 0 80px;
+  }
+
+  .section-contacts .container {
+    padding: 0 130px;
+  }
+}
