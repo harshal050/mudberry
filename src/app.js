@@ -8,7 +8,6 @@ const bcrypt = require("bcrypt")
 const nodemailer = require('nodemailer')
 // const jwt = require('jsonwebtoken')
 const cookieparser = require("cookie-parser")
-const {loginrequired} = require('../config/JWT')
 
 
 require("./db/conn")
@@ -38,12 +37,9 @@ hbs.registerPartials(partialsPath);
 
 // Set up routes
 app.get("/", (req, res) => {
-    res.render("index")
+    res.render("index") 
 });
 
-app.get("/", loginrequired,(req, res) => {
-    res.render("index")
-});
 
 // app.get("/logout", (req, res) => {
 //     res.cookie('access-token' , "",{maxAge:1})
