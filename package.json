@@ -1,0 +1,15 @@
+{
+  "name": "mernbackend",
+  "version": "1.0.0",
+  "description": "harshal malaviya",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "harshal",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
